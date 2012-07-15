@@ -1,0 +1,29 @@
+<h1>Resultados de busqueda</h1>
+<%= link_to "Regresar", :action => "index" %>  <br> <br>
+
+<table border="1">
+  <tr>
+    <td>
+      Usuario
+    </td>
+    <td>
+      Mensaje
+    </td>
+    <td>
+      Id Palabra
+    </td>
+  </tr>
+  <% @twitter.each do |twitter|%>
+      <tr>
+        <td>
+          <%= twitter.usuario %>
+        </td>
+        <td>
+          <%= twitter.mensaje %>
+        </td>
+        <td>
+          <%= twitter.id_search %>
+        </td>
+      </tr>
+  <% end %>
+</table>

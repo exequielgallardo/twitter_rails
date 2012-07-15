@@ -1,0 +1,25 @@
+<h1>Lista de palabras</h1>
+<%= link_to "Nueva", :action => "new" %> - <%= link_to "Resultados busqueda", :action => "result" %>  <br> <br>
+
+<table border="1">
+  <tr>
+    <td>
+      id
+    </td>
+    <td>
+      Palabra
+    </td>
+  </tr>
+  <% @palabras.each do |palabra|%>
+      <tr>
+        <td>
+          <%= palabra.id %>
+        </td>
+        <td>
+          <%= palabra.palabra %>
+        </td>
+      </tr>
+  <% end %>
+</table>
+
+

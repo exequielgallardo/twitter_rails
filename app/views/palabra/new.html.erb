@@ -1,0 +1,13 @@
+<h2>Nueva palabra</h2>
+<%= form_for @search, :url => { :action => "create" } do |p| %>
+    <%= label_tag(:q, "Palabra:") %>
+    <%= p.text_field :palabra %>
+    <%= submit_tag("Guardar") %>
+<% end %>
+
+
+
+
+
+
+
